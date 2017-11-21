@@ -12543,11 +12543,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\GoswamiK\\Documents\\Visual Studio 2017\\Projects\\Converter\\Converter\\Converter.csproj",
+      "projectUniqueName": "D:\\Works\\Converter\\Converter\\Converter.csproj",
       "projectName": "Converter",
-      "projectPath": "C:\\Users\\GoswamiK\\Documents\\Visual Studio 2017\\Projects\\Converter\\Converter\\Converter.csproj",
+      "projectPath": "D:\\Works\\Converter\\Converter\\Converter.csproj",
       "packagesPath": "C:\\Users\\GoswamiK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GoswamiK\\Documents\\Visual Studio 2017\\Projects\\Converter\\Converter\\obj\\",
+      "outputPath": "D:\\Works\\Converter\\Converter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
