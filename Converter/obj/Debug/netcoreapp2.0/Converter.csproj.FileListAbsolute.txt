@@ -9,3 +9,14 @@ C:\Users\GoswamiK\Documents\Visual Studio 2017\Projects\Converter\Converter\obj\
 C:\Users\GoswamiK\Documents\Visual Studio 2017\Projects\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.AssemblyInfo.cs
 C:\Users\GoswamiK\Documents\Visual Studio 2017\Projects\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.dll
 C:\Users\GoswamiK\Documents\Visual Studio 2017\Projects\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.pdb
+D:\Works\Converter\Converter\bin\Debug\netcoreapp2.0\Converter.deps.json
+D:\Works\Converter\Converter\bin\Debug\netcoreapp2.0\Converter.runtimeconfig.json
+D:\Works\Converter\Converter\bin\Debug\netcoreapp2.0\Converter.runtimeconfig.dev.json
+D:\Works\Converter\Converter\bin\Debug\netcoreapp2.0\Converter.dll
+D:\Works\Converter\Converter\bin\Debug\netcoreapp2.0\Converter.pdb
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.csprojResolveAssemblyReference.cache
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.csproj.CoreCompileInputs.cache
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.AssemblyInfoInputs.cache
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.AssemblyInfo.cs
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.dll
+D:\Works\Converter\Converter\obj\Debug\netcoreapp2.0\Converter.pdb
