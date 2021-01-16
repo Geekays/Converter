@@ -29,9 +29,11 @@ variables:
 pool:
   name: Hosted VS2017
 
+
 steps:
-  - script: |
-      echo $(isMain) # outputs True
+
+- script: |
+    echo $(isMain) # outputs True
 
 - task: DotNetCoreCLI@2
   displayName: DotNet Restore
