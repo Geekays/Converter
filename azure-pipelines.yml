@@ -33,7 +33,8 @@ pool:
 steps:
 
 - script: |
-    echo $(isMain) # outputs True
+    echo $(isMain) # outputs isMain
+    echo ${{variables['Build.SourceBranch']}} #(variables['Build.SourceBranch']
 
 - task: DotNetCoreCLI@2
   displayName: DotNet Restore
@@ -107,6 +108,7 @@ steps:
 
 - task: DotNetCoreCLI@2
   displayName: 'Push to Nuget Artifact'
+  condition: and(succeeded(), startsWith(variables['build.sourceBranch'], 'refs/tags/')) # Only run this step when the trigger event is a tag push
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
