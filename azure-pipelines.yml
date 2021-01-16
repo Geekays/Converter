@@ -24,11 +24,14 @@ schedules:
 
 variables:
   BuildConfiguration: release
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')] # runtime expression
 
 pool:
   name: Hosted VS2017
 
 steps:
+  - script: |
+      echo $(isMain) # outputs True
 
 - task: DotNetCoreCLI@2
   displayName: DotNet Restore
@@ -90,6 +93,7 @@ steps:
         Write-Error "$tag does not conform to semantic versioning"
         exit 1
       }
+
 - task: DotNetCoreCLI@2
   displayName: 'Pack'
   condition: and(succeeded(), startsWith(variables['build.sourceBranch'], 'refs/tags/')) # Only run this step when the trigger event is a tag push
@@ -104,5 +108,5 @@ steps:
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    nuGetFeedType: 'external'
-    publishFeedCredentials: 
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '81728805-bb52-4c69-82f1-d3df2b29e838/398f0bcf-eb64-4fa5-a415-cdf05a958e88'
