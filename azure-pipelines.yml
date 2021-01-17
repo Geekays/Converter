@@ -24,7 +24,7 @@ schedules:
 
 variables:
   BuildConfiguration: release
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')] # runtime expression
+  isMaster: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')] # runtime expression
 
 pool:
   name: Hosted VS2017
@@ -33,7 +33,7 @@ pool:
 steps:
 
 - script: |
-    echo $(isMain) # outputs isMain
+    echo $(isMaster) # outputs isMaster
     echo ${{variables['Build.SourceBranch']}} #(variables['Build.SourceBranch']
 
 - task: DotNetCoreCLI@2
@@ -69,6 +69,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
+  condition: and(succeeded(), eq(variables.isMaster, true))
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
 
